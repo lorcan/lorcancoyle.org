@@ -1,0 +1,9 @@
+<div>
+	<h1>Reading Diary</h1>
+	This a diary list of the last books that I read.
+	<ul>
+		<li ng-repeat="book in books">
+			<a href='{{book.bookURL}}'>{{book.booktitle}}</a> by <a href='{{book.authorURL}}'>{{book.author}}</a>. {{book.date}}.
+		</li>
+	</ul>
+</div>
