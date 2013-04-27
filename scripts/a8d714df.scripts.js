@@ -1,0 +1,1 @@
+define([],function(){"use strict";return"'Allo 'Allo!"}),angular.module("lorcancoyle.orgApp").controller("BookCtrl",["$scope","$http","$log",function(o,t,n){"use strict";t.get("/scripts/books.json").then(function(t){o.books=t.data}),n.info("BookCtrl initialisation completed.")}]);
