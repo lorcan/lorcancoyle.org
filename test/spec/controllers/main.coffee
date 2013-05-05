@@ -3,9 +3,10 @@
 describe 'Controller: MainCtrl', () ->
 
   # load the controller's module
-  beforeEach module 'lorcancoyle.orgApp'
+  beforeEach module 'lorcancoyleorg'
 
   MainCtrl = {}
+  BookCrtl = {}
   scope = {}
 
   # Initialize the controller and a mock scope
