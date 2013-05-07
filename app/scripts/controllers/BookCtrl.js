@@ -1,9 +1,9 @@
 angular.module('lorcancoyleorg').controller('BookCtrl', function($scope, $http, $log) {
-   'use strict';
+    'use strict';
 
-   $http.get('/scripts/books.json').then(function(res) {
-      $scope.books = res.data;
-   });
+    $http.get('/scripts/books.json').then(function(res) {
+          $scope.books = res.data;
+        });
 
-   $log.info('BookCtrl initialisation completed.');
-});
+    $log.info('BookCtrl initialisation completed.');
+  });
