@@ -349,6 +349,15 @@ FileETag None
 # RewriteBase /
 </IfModule>
 
+# BEGIN angularJS -LC
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)       /index.html/#/$1 
+</IfModule>
+# END angularJS
 
 # ----------------------------------------------------------------------
 # Suppress or force the "www." at the beginning of URLs
